@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IIT-Roorkee</title>
+	<link rel="shortcut icon" href=logo.jpg>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		<style>
+body {
+  background: white;
+  max-width: 1300px;
+}
+.portal{
+	background-color: navy;
+	padding-top: 15px;
+}
+.portal a{
+
+	max-width: 1300px;
+	margin: auto;
+	text-align: left;
+	padding: 10px 12px;
+	color: White;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.content{
+	float: right;
+	padding-top: 0px;
+}
+
+.header {
+  max-width: 1300px;
+  height: 100px;
+  background-color: white;
+  margin: auto;
+  padding: 0px;
+}
+.topnav {
+	max-width: 1300px;
+	margin: auto;
+  overflow: hidden;
+  background-color: navy;
+  padding-top: 10px;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: navy;
+  color: white;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.rprt h3{
+	padding-top: 10px;
+  background-color: cornsilk;
+  color: navy;
+  max-width: 900px;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  padding-left: 15px;
+}
+.rprt iframe{
+	max-width: 900px;
+	margin: auto;
+}
+.rprt button{
+	max-width: 900px;
+	margin: auto;
+	width: 10%;
+	padding: 10px;
+	background-color: chocolate;
+	color: white;
+	font-family: font-family: Arial, Helvetica, sans-serif;
+}
+
+	</style>
+</head>
+<body>
+	<div class="portal">
+		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+		<a href="">Faculty</a>
+		<a href="">Student</a>
+	</div>
+	<div class="content">
+		<form>
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    	</form>
+	</div>
+	<div class="header">
+		<div id="logo">
+			<h1><img src="logo.jpg" width="80px" height="90px" align="center">&nbsp<font color="navy">Indian Institute of Technology Roorkee</font></h1>
+		</div>
+	</div>
+	<div class="topnav">
+  		<a class="active" href="IITR.html">Home</a>
+  		<div class="dropdown">
+    <button class="dropbtn">Institute
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="header.html">About IIT Roorkee</a>
+      <a href="#">IITR Videos</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Department
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="dept.html">Computer Science and Engineering</a>
+      <a href="dept.html">Electronics and Communication Engineering</a>
+      <a href="dept.html">Electrical Engineering</a>
+      <a href="dept.html">Mechanical Engineering</a>
+      <a href="dept.html">Biomedical Engineering</a>
+      <a href="dept.html">Robotics</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+  <button class="dropbtn">Placement
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="about.html">Our Recruiters</a>
+      <a href="placementreport.html">Placement Report</a>
+    </div>
+  </div> 
+  		<a href="Contact.html">Contact</a>
+	</div>
+	<div class="rprt">
+		<br><br><h3>Check the Placement Statistical Report</h3>
+		<iframe id="myFrame" style="display:none" width="900" height="500"></iframe>
+		<br>&nbsp&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+		<button onclick="rprt()"><strong>Check Report</strong></button>
+			<script type="text/javascript">
+				function rprt()
+				{
+				var omyFrame = document.getElementById("myFrame");
+				omyFrame.style.display="block";
+				omyFrame.src = "report.pdf";
+				}
+			</script>
+	</div>
+
+</body>
+</html>
